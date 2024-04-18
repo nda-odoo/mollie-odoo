@@ -2,8 +2,6 @@ odoo.define('mollie_pos_terminal.models', function (require) {
     var models = require('point_of_sale.models');
     var PaymentMollie = require('mollie_pos_terminal.payment');
 
-    debugger;
-
     models.register_payment_method('mollie', PaymentMollie);
     models.load_fields('pos.payment.method', 'mollie_pos_terminal_id');
 
